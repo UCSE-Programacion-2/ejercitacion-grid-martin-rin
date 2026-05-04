@@ -11,19 +11,23 @@ body {
 }
 
 .container {
-  width: min(100%, 1500px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   padding: 1rem;
 }
 
+.logo {
+  margin-bottom: 1rem;
+}
+
 .logo img {
-  width: 180px;
+  width: 160px;
   height: auto;
 }
 
 h3 {
-  margin: 2rem 0;
   text-align: center;
+  margin: 2rem 0;
   font-size: 2rem;
 }
 
@@ -36,7 +40,7 @@ img {
 .exercice {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .exercice-complete img {
