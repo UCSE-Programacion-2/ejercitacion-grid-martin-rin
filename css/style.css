@@ -32,3 +32,9 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
