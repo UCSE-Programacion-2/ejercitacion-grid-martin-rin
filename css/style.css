@@ -6,23 +6,73 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f3f3f3;
+  background: #eeeeee;
   color: #1f1f1f;
 }
 
 .container {
-  width: min(100%, 960px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   padding: 1rem;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 160px;
   height: auto;
 }
 
-/* TODO alumno:
-   Aplicar Grid en .exercice y .excercice-incomplete
-   con enfoque Mobile First + media queries.
-*/
+h3 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.exercice {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.exercice-complete img {
+  width: 100%;
+  height: auto;
+}
+
+.excercice-incomplete {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.excercice-incomplete img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .exercice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .excercice-incomplete {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
